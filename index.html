@@ -4,26 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+    <script
+      src="https://kit.fontawesome.com/52d03c6e13.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Personal Portfolio</title>
   </head>
   <body>
-    <nav class="navbar">
-      <a href="#">Home</a>
-      <a href="#">Projects</a>
-      <a href="#">Links</a>
+    <div id="home"></div>
+    <nav id="navbar">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#profile">Links</a>
     </nav>
-    <section class="welcome-section">
-      <h1>Hi, I'm Mark. I'm a web developer.</h1>
+    <section id="welcome-section">
+      <h1>Hi, I'm Brian. I'm a web developer.</h1>
     </section>
-    <section class="projects">
-      <div class="project-tile">
-        <a href="#"></a>
+    <section id="projects">
+      <div class="container-tile">
+        <div class="project-tile">
+          <a href="#">
+            <div class="image">
+              <img src="assets/product-landing.png" alt="" />
+            </div>
+            <h3>Product Landing Page</h3>
+          </a>
+        </div>
+        <div class="project-tile">
+          <a href="#">
+            <div class="image">
+              <img src="assets/technical-documentation.png" alt="" />
+            </div>
+            <h3>Technical Documentation Page</h3>
+          </a>
+        </div>
+        <div class="project-tile">
+          <a href="#">
+            <div class="image">
+              <img src="assets/survey-form.png" alt="" />
+            </div>
+            <h3>Survey Form</h3>
+          </a>
+        </div>
       </div>
-      <div class="project-tile"></div>
-      <div class="project-tile"></div>
     </section>
-    <section class="profile">
-      <a href="#">Github</a>
+    <section id="profile">
+      <a href="https://github.com/binayab99" target="_blank" id="profile-link"
+        ><i class="fab fa-github"></i>Github</a
+      >
     </section>
   </body>
 </html>

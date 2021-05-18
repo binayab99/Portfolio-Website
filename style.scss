@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+a {
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+// .container {
+//   position: relative;
+//   max-width: 1440px;
+//   padding: 3rem 8rem;
+//   display: flex;
+//   flex-direction: column;
+//   margin-inline: auto;
+// }
+
+#navbar {
+  position: sticky;
+  background-color: lightblue;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  padding-block: 2rem;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightseagreen;
+}
+
+#projects {
+  padding-block: 3rem;
+  background-color: darkturquoise;
+
+  .container-tile {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    font-size: 0.9rem;
+    // overflow: hidden;
+
+    @media (max-width: 700px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .project-tile {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 30rem;
+    min-width: 18rem;
+    transition: transform 1s ease-in-out;
+
+    .image {
+      width: 100%;
+      height: 20rem;
+    }
+
+    &:hover {
+      transform: scaleY(110%);
+
+      @media (max-width: 700px) {
+        flex-direction: column;
+        transform: scaleX(110%);
+      }
+    }
+  }
+}
+
+#profile {
+  padding-block: 3rem;
+  display: flex;
+  justify-content: space-around;
+
+  i {
+    padding-inline: 1rem;
+  }
+}
