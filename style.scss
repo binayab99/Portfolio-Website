@@ -34,16 +34,9 @@ a {
 
 img {
   width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
-
-// .container {
-//   position: relative;
-//   max-width: 1440px;
-//   padding: 3rem 8rem;
-//   display: flex;
-//   flex-direction: column;
-//   margin-inline: auto;
-// }
 
 #navbar {
   position: sticky;
